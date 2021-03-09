@@ -24,7 +24,7 @@ class Contact extends Component {
         
 
         this.handleSubmit = this.handleSubmit.bind(this);
-        // this.handleReset = this.handleReset.bind(this);
+        this.handleReset = this.handleReset.bind(this);
 
        
     }
@@ -43,10 +43,10 @@ class Contact extends Component {
         
     }
 
-    // handleReset(values) {
-    //     console.log('Current State is: ' + JSON.stringify(values));        
+    handleReset(values) {
+        console.log('Current State is: ' + JSON.stringify(values));        
 
-    // }
+    }
 
     render() {
         return (
