@@ -53,6 +53,7 @@ class Living extends Component {
             </div>
           </div><br />
         </div>
+        
         <div class="bg-image"
           style={{
             backgroundImage: 'url("/Images/components_images/living/div5.jpg")',

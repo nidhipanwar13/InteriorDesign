@@ -40,8 +40,6 @@ class Main extends Component {
 
     render() {
 
-        
-
         const Homepage = () => {
             return(
                 <Home SendConsultationBooking = {this.props.SendConsultationBooking}/>

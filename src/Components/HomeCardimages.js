@@ -10,7 +10,6 @@ import Bounce from 'react-reveal/Bounce';
 import { CardImgOverlay } from 'reactstrap';
 
 
-
 class HomeCardimages extends Component {
 
     render() {

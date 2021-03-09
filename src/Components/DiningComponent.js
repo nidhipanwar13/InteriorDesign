@@ -15,7 +15,6 @@ class Dining extends Component {
             src="./Images/components_images/dining/cover.jpg"
             alt="bedroomimage" />
         </div>
-
         <div class="bg-image"
           style={{
             backgroundImage: 'url("/Images/components_images/workspace/div3.jpg")',

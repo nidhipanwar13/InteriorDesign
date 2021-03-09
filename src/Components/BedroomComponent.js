@@ -3,7 +3,6 @@ import { Card, CardBody, CardTitle, CardImg, CardText, CardDeck, CardGroup, Card
 import { Button, Row, Col } from 'reactstrap';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
-import Rotate from 'react-reveal/Rotate';
 
 
 

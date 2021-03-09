@@ -102,8 +102,6 @@ class Home extends Component {
             phonenum: '',
             email: ''
 
-
-
         };
 
         if (this.state.touched.fullname && fullname.length < 3)

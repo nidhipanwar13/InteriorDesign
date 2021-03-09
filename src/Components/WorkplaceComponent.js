@@ -34,6 +34,7 @@ class Workplace extends Component {
             </div>
           </div>
         </div> */}
+
         <div class="bg-image"
           style={{
             backgroundImage: 'url("/Images/components_images/workspace/div2.jpg")',
@@ -106,6 +107,7 @@ class Workplace extends Component {
             </div><br />
           </div>
         </div>
+
         <div class="bg-image"
           style={{
             backgroundImage: 'url("/Images/components_images/workspace/div4.jpg")',
@@ -142,6 +144,7 @@ class Workplace extends Component {
             </div>
           </div><br />
         </div>
+        
         <div class="bg-image"
           style={{
             backgroundImage: 'url("/Images/components_images/workspace/div5.jpg")',
