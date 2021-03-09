@@ -5,7 +5,7 @@ import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 import { ButtonToggle } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
-import {firebase,dataref,ContactDetailsRef} from "../Config/firebase";
+import { firebase, dataref, ContactDetailsRef } from "../Config/firebase";
 
 
 
@@ -21,30 +21,31 @@ class Contact extends Component {
 
     constructor(props) {
         super(props);
-        
+
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleReset = this.handleReset.bind(this);
 
-       
+
     }
 
     handleSubmit(values) {
-        ContactDetailsRef .set ({
+        ContactDetailsRef.set({
             Fullname: values.Fullname,
             Email: values.email,
             Phonenum: values.phonenum,
-            Message: values.m2essage
+            Message: values.message
 
         });
 
         console.log('Current State is: ' + JSON.stringify(values));
-        alert('Current State is: ' +'\n'  + JSON.stringify(values ));
-        
+        alert('Current State is: ' + '\n' + JSON.stringify(values));
+
     }
 
     handleReset(values) {
-        console.log('Current State is: ' + JSON.stringify(values));        
+        
+        console.log('Current State is: ' + values);
 
     }
 
@@ -74,93 +75,95 @@ class Contact extends Component {
                         <div className="row">
                             <div className="col-sm col-md-8">
                                 <h2 className="aligntext">Drop your message here</h2><br />
-                                <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
+                                <LocalForm onSubmit={(values) => this.handleSubmit(values)}
+                                            onClick={(values) => this.handleReset(values)}>
                                     <Row className="form-group">
                                         <label htmlFor="fullname" class="col-sm-2"> Fullname </label>
                                         <Col md={6}>
-                                        <Control.text model=".Fullname"  id="fullname" name="fullname"
-                                        placeholder="Full Name"
-                                        className="form-control"
-                                        validators={{
-                                            required, minLength: minLength(3)
-                                        }}
-                                         />
-                                          <Errors
-                                        className="text-danger"
-                                        model=".Fullname"
-                                        show="touched"
-                                        messages={{
-                                            required: 'Required',
-                                            minLength: 'Must be greater than 2 characters',
-                                            
-                                        }}
-                                     />
+                                            <Control.text model=".Fullname" id="fullname" name="fullname"
+                                                placeholder="Your fullname"
+                                                className="form-control"
+                                                validators={{
+                                                    required, minLength: minLength(3)
+                                                }}
+                                            />
+                                            <Errors
+                                                className="text-danger"
+                                                model=".Fullname"
+                                                show="touched"
+                                                messages={{
+                                                    required: 'Required',
+                                                    minLength: 'Must be greater than 2 characters',
+
+                                                }}
+                                            />
                                         </Col>
                                     </Row>
 
                                     <Row className="form-group">
                                         <label for="email" class="col-sm col-md-2" > E-mail &emsp;</label>
                                         <Col md={6} >
-                                        <Control.text model=".email" id="email" name="email"
-                                        placeholder="Email"
-                                        className="form-control" 
-                                        validators={{
-                                            required, validEmail
-                                        }}/>
-                                        <Errors
-                                        className="text-danger"
-                                        model=".email"
-                                        show="touched"
-                                        messages={{
-                                            required: 'Required',
-                                            validEmail: 'Invalid Email Address'
-                                        }}
-                                     />
+                                            <Control.text model=".email" id="email" name="email"
+                                                placeholder=" Your email"
+                                                className="form-control"
+                                                validators={{
+                                                    required, validEmail
+                                                }} />
+                                            <Errors
+                                                className="text-danger"
+                                                model=".email"
+                                                show="touched"
+                                                messages={{
+                                                    required: 'Required',
+                                                    validEmail: 'Invalid Email Address'
+                                                }}
+                                            />
                                         </Col >
                                     </Row>
 
                                     <Row className="form-group">
                                         <label for="phonenum" class="col-sm col-md-2" > Phone &emsp;</label>
                                         <Col md={6} >
-                                        <Control.text model=".phonenum" id="phonenum" name="phonenum"
-                                        placeholder="Phone Number"
-                                        className="form-control"
-                                        validators={{
-                                            required, minLength: minLength(10), isNumber
-                                        }}
-                                         />
-                                          <Errors
-                                        className="text-danger"
-                                        model=".phonenum"
-                                        show="touched"
-                                        messages={{
-                                            required: 'Required',
-                                            minLength: 'Must be a 10 digit number',
-                                            
-                                        }}
-                                     />
+                                            <Control.text model=".phonenum" id="phonenum" name="phonenum"
+                                                placeholder="Your phone number"
+                                                className="form-control"
+                                                validators={{
+                                                    required, minLength: minLength(10), isNumber
+                                                }}
+                                            />
+                                            <Errors
+                                                className="text-danger"
+                                                model=".phonenum"
+                                                show="touched"
+                                                messages={{
+                                                    required: 'Required',
+                                                    minLength: 'Must be a 10 digit number',
+
+                                                }}
+                                            />
                                         </Col >
                                     </Row>
 
                                     <Row className="form-group">
                                         <label for="message" class="col-sm col-md-2 "> Message</label>
                                         <Col md={6}>
-                                        <Control.text model=".message" id="message" name="message"
-                                        placeholder="Message"
-                                        className="form-control"
-                                        validators={{ required, minLength: minLength(7)
-                                        }}
-                                         />
-                                          <Errors
-                                        className="text-danger"
-                                        model=".message"
-                                        show="touched"
-                                        messages={{
-                                            required: 'Required',
-                                            minLength: 'Must be greater than 7 characters',
-                                            
-                                        }}
-                                     />
+                                            <Control.text model=".message" id="message" name="message"
+                                                placeholder="Drop your message here"
+                                                className="form-control"
+                                                validators={{
+                                                    required, minLength: minLength(7)
+                                                }}
+                                            />
+                                            <Errors
+                                                className="text-danger"
+                                                model=".message"
+                                                show="touched"
+                                                messages={{
+                                                    required: 'Required',
+                                                    minLength: 'Must be greater than 7 characters',
+
+                                                }}
+                                            />
                                         </Col>
                                     </Row>
 
@@ -168,25 +171,25 @@ class Contact extends Component {
                                         <Col md={{ size: '10', offset: 0 }}>
                                             <Button type="submit" value="submit" >Submit</Button>
                                             &nbsp;
-                                    <Button onClick={(values) => this.handleReset(values)} > &nbsp;Reset &nbsp;</Button>
+                                    <Button type="reset" value="reset" > &nbsp;Reset &nbsp;</Button>
                                         </Col>
                                     </Row>
                                 </LocalForm>
                             </div>
-                        
-                        
-                            
-                                <div className="col-sm col-md-4">
-                                    <h2 className="aligntext">Our Location</h2><br />
-                                    <Card body>
-                                        <CardTitle >add your company address here</CardTitle>
-                                        <CardText>add address here<br />add address here<br />add address here<br />add address here<br />add address here<br /> </CardText>
-                                    </Card>
-                                
+
+
+
+                            <div className="col-sm col-md-4">
+                                <h2 className="aligntext">Our Location</h2><br />
+                                <Card body>
+                                    <CardTitle >add your company address here</CardTitle>
+                                    <CardText>add address here<br />add address here<br />add address here<br />add address here<br />add address here<br /> </CardText>
+                                </Card>
+
                             </div>
-                        </div><br/>
+                        </div><br />
                     </div>
-                </FadeTransform><br/>
+                </FadeTransform><br />
                 {/* <Map google={this.props.google} zoom={5}>
  
         <Marker onClick={this.onMarkerClick}
