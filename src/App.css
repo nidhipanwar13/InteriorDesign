@@ -142,23 +142,6 @@ video {
   z-index: -1;
 }
 
-.hero-container {
-  /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
-  /* height: 100vh;
-  width: 100%;
-  object-fit: cover;
-  
-  justify-content: center;
-  align-items: center; */
-
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-  
-}
-
-
 .bodytext {
   color:#001A64; ;
 }

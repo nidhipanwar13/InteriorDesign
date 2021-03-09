@@ -2,8 +2,6 @@ import * as ActionTypes from './ActionTypes';
 import { USERDATA } from '../shared/userdata';
 import { BOOKINGCONSULTATION } from '../shared/Consultationinfo';
 
-
-
 export const fetchUserdata = () => (dispatch) => {
     dispatch(loadingUserdata(true));
     setTimeout(() => {

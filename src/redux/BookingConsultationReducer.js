@@ -2,7 +2,6 @@ import * as ActionTypes from "./ActionTypes";
 import { BOOKINGCONSULTATION } from '../shared/Consultationinfo';
 
 
-
 export const BookingConsultation = (state = {
     errMess: null,
     bookings: []
