@@ -36,3 +36,203 @@
     transform: rotate(360deg);
   }
 }
+
+.asd {
+  background-color: beige;
+}
+
+.header {
+ background-color: #05A9A8;
+ min-height: 10vmin;
+ display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.headertext {
+  color: floralwhite;
+  font-weight: bold;
+  
+}
+.headertext2{
+  font-weight: bold;
+  color:floralwhite;
+}
+
+.logo {
+  height: 7vmin;
+}
+
+.text {
+  color:  #A4DE02;
+    
+}
+
+.body {
+  position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+  
+}
+.footer {
+
+  color: black;
+  background-color: #05A9A8;
+  
+
+}
+.unstyled{
+  color: black;
+ text-align: left;
+ margin-left: 0em;
+font-weight: bold;
+
+}
+
+.footerpadding {
+ padding-left: 100px;
+  color: whitesmoke;
+  width:50%
+  
+}
+/* .social-icons{
+  padding-left: 25em;
+} */
+
+.hr{
+ 
+  border: 1px solid whitesmoke;
+  width: 70%;
+  /* margin-left: 10;
+  margin-right: 10; */
+}
+
+
+.page-enter {
+  opacity: 0.01;
+  transform: translateX(-100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 300ms ease-in;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.page-exit-active {
+  opacity: 0.01;
+  transform: translateX(100%);
+  transition: all 300ms ease-out;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.hero-container {
+  /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+  /* height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  
+  justify-content: center;
+  align-items: center; */
+
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  
+}
+
+
+.bodytext {
+  color:#001A64; ;
+}
+.cardtext {
+  color: white;
+  background-color: #001A64;
+  
+}
+.fontstyle3{
+  color: floralwhite;
+  font-weight: bold;
+  text-align: center;
+}
+.fontstyle {
+color: floralwhite;
+text-align: center;
+}
+.text-justify{
+  color: floralwhite;
+  font-size:120%;
+  text-align: center;
+
+}
+.style{
+  width: "100%";
+}
+.flex{
+  display:flex;
+}
+.fontitalic {
+  text-align:"justify";
+  font-weight: bold;
+  color: floralwhite;
+}
+.fontitalic2{
+  text-align:"justify";
+  color: black;
+  font-weight: bold;
+}
+.paragraph{
+  color: floralwhite;
+}
+
+.aligntext {
+  text-align: center;
+  color: whitesmoke;
+}
+.form-control {
+  color: whitesmoke;
+background-color: #182d54;;
+}
+.modalbody {
+  background-color: whitesmoke;
+  color: black;
+  font-weight: bold;
+}
+.paddingheader {
+  padding-right: 30em;
+}
+.paddingheadertext {
+  padding-right: 2em;
+}
+
+/* .carousel-fade {
+  transition: 2000;
+
+} */
+.carousel slide carousel-fade {
+  transition: 2000;
+}
+.form-group{
+  color: floralwhite;
+}
+.modaltext{
+  color: black;
+}
+
