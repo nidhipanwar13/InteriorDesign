@@ -28,7 +28,7 @@ import firebase from "../Config/firebase";
 
  const mapDispatchToProps = dispatch => ({
     fetchUserdata: () => {dispatch(fetchUserdata())},
-    SendConsultationBooking : (fullname, phonenum, email) => {dispatch(SendConsultationBooking(fullname,phonenum,email))}
+    SendConsultationBooking : (fullname, phonenum, email, time) => {dispatch(SendConsultationBooking(fullname,phonenum,email,time))}
  });
 
 class Main extends Component {

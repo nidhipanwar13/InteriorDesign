@@ -54,7 +54,7 @@ class Contact extends Component {
 
             <div class="bg-image"
                 style={{
-                    backgroundImage: 'url("/Images/bg.jpg")',
+                    backgroundImage: 'url("/Images/components_images/contact/coverpage.jpg")',
                     backgroundSize: "cover",
                     backgroundAttachment: 'fixed',
 
@@ -69,12 +69,13 @@ class Contact extends Component {
                     <div className="container">
                         <div className="container"><br />
                             <h1 className="headertext2">Always happy to hear from you</h1><br />
+                            {/* <i className="fas fa-phone-alt"></i><a href = "1234567890">1234567890</a>&nbsp; */}
                             {/* <i className="fa fa-phone"></i><a href="mailto:info@Miluzstudio.com"> info@Miluzstudio.com</a>&nbsp;&nbsp; */}
                             <i className="fa fa-envelope"></i><a href="mailto:info@Miluzstudio.com"> info@Miluzstudio.com</a><br /><br />
                         </div>
                         <div className="row">
                             <div className="col-sm col-md-8">
-                                <h2 className="aligntext">Drop your message here</h2><br />
+                                <h2 className="aligntext2">Drop your message here</h2><br /><br/>
                                 <LocalForm onSubmit={(values) => this.handleSubmit(values)}
                                             onClick={(values) => this.handleReset(values)}>
                                     <Row className="form-group">
@@ -180,7 +181,7 @@ class Contact extends Component {
 
 
                             <div className="col-sm col-md-4">
-                                <h2 className="aligntext">Our Location</h2><br />
+                                <h2 className="aligntext">Our location</h2><br /><br/>
                                 <Card body>
                                     <CardTitle >add your company address here</CardTitle>
                                     <CardText>add address here<br />add address here<br />add address here<br />add address here<br />add address here<br /> </CardText>

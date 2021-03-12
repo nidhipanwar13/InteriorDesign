@@ -16,7 +16,6 @@ var firebaseConfig = {
   
  export const dataref = firebase.database().ref();
  export const BookingConsultationRef = dataref.child("BookingConsultation");
- export const newBookingConsultationRef = BookingConsultationRef.push();
  export const ContactDetailsRef = dataref.child("ContactDetails");
 
 

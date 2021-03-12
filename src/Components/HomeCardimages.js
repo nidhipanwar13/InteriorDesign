@@ -28,9 +28,8 @@ class HomeCardimages extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-sm col-md-12">
-                                    <p className="text-justify ">We are specialized in interior design to fit your space. We provide the most stylish and modern furnishings solutions for all your needs.Your home reflects your personality and something that you and your family love to spend time together.You don't need to look further to find anything because our services are always reliable and professional. Our team of designers is always looking for new trends and innovative solutions to make your home look and feel more elegant. </p>
+                                    <p className="text-justify ">We are specialized in interior design to fit your space. We provide the most stylish and modern furnishings solutions for all your needs. Your home reflects your personality and something that you and your family love to spend time together. You don't need to look further to find anything because our services are always reliable and professional. Our team of designers is always looking for new trends and innovative solutions to make your home look and feel more elegant. </p><br/>
                                 </div>
-
                             </div>
                         </div>
                     </Fade>

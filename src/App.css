@@ -189,6 +189,12 @@ text-align: center;
   text-align: center;
   color: whitesmoke;
 }
+.aligntext2 {
+  padding-left: 2em;
+  text-align: left;
+  color: whitesmoke;
+}
+
 .form-control {
   color: whitesmoke;
 background-color: #182d54;;

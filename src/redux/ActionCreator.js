@@ -10,12 +10,13 @@ export const fetchUserdata = () => (dispatch) => {
 
 }
 
-export const SendConsultationBooking = (fullname, phonenum, email) => (dispatch) => {
+export const SendConsultationBooking = (fullname, phonenum, email, time) => (dispatch) => {
 
     const newBooking = {
         Fullname: fullname,
         Phonenum: phonenum,
-        Email: email
+        Email: email,
+        Time: time
     }
 
     dispatch(SendBooking(newBooking));       

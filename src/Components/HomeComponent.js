@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import HomeCardimages from './HomeCardimages';
 import { ButtonToggle } from 'reactstrap';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Input, Label, Form, FormGroup } from 'reactstrap';
-import {firebase,dataref,BookingConsultationRef,newBookingConsultationRef} from "../Config/firebase";
+import { firebase, dataref, BookingConsultationRef } from "../Config/firebase";
+import DateTimePicker from 'react-datetime-picker';
 
 
 class Home extends Component {
@@ -14,21 +15,19 @@ class Home extends Component {
             fullname: '',
             phonenum: '',
             email: '',
+            time: '',
             touched: {
                 fullname: false,
                 phonenum: false,
-                email: false
+                email: false,
+            
             },
-
-
         }
 
         this.toggleModal = this.toggleModal.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleBlur = this.handleBlur.bind(this);
-
-
     }
 
 
@@ -44,15 +43,15 @@ class Home extends Component {
         const name = target.name;
 
         this.setState({
-            [name]: value,
-            time: new Date(Date.now())
+            [name]: value
+            // time: new Date()
         });
     }
 
     handleSubmit(event) {
+        event.preventDefault();
         const errors = this.validate(this.state.fullname, this.state.phonenum, this.state.email);
         var canSubmit = true;
-
 
         if (errors.fullname !== '' || this.state.fullname === '')
             canSubmit = false;
@@ -64,30 +63,28 @@ class Home extends Component {
             canSubmit = false;
 
         if (canSubmit) {
-           newBookingConsultationRef .set({
-                    Fullname: this.state.fullname,
-                    Phonenum: this.state.phonenum,
-                    Email: this.state.email
-              });
-
-              BookingConsultationRef.push.set({
+                
+            BookingConsultationRef.push({
                 Fullname: this.state.fullname,
                 Phonenum: this.state.phonenum,
-                Email: this.state.email
-          });
-            
-            this.props.SendConsultationBooking(this.state.fullname, this.state.phonenum, this.state.email);
-            
-            alert('Full name: ' + this.state.fullname +
-                '\nPhone No.:  ' + this.state.phonenum +
-                '\nE-mail:      ' + this.state.email +
-                '\nYour information has been submitted');
+                Email: this.state.email,
+                Time: JSON.stringify(this.state.time)
+            });
+
+
+            this.props.SendConsultationBooking(this.state.fullname, this.state.phonenum, this.state.email, this.state.time);
+
+            alert('Full name :      ' + this.state.fullname +
+            '\nPhone No.:      ' + this.state.phonenum +
+            '\nE-mail:              ' + this.state.email +
+            '\nTime:  ' + this.state.time +
+            '\nYour information has been submitted');
         }
+
+        
         else {
             alert("Please fill all the inputs");
         }
-
-        event.preventDefault();
     }
 
     handleBlur = (field) => (evt) => {
@@ -101,7 +98,7 @@ class Home extends Component {
             fullname: '',
             phonenum: '',
             email: ''
-
+            
         };
 
         if (this.state.touched.fullname && fullname.length < 3)
@@ -122,12 +119,12 @@ class Home extends Component {
 
     }
 
-
     handleReset = () => {
         this.setState({
             fullname: '',
             phonenum: '',
             email: '',
+            time: '',
             touched: {
                 fullname: false,
                 phonenum: false,
@@ -137,8 +134,8 @@ class Home extends Component {
         });
     };
 
-
     render() {
+
         const errors = this.validate(this.state.fullname, this.state.phonenum, this.state.email);
 
         return (
@@ -182,9 +179,9 @@ class Home extends Component {
                         </Carousel.Caption>
                     </Carousel.Item  >
                 </Carousel>
-                
+
                 <HomeCardimages />
-                
+
                 <div>
                     <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                         <ModalHeader className="fontstyle2" toggle={this.toggleModal}>Provide your valid information</ModalHeader>
@@ -232,12 +229,29 @@ class Home extends Component {
                                         placeholder="Your email" />
                                     <p>{errors.email}</p>
                                 </FormGroup>
+
+                                <FormGroup>
+                                    <label htmlFor="time" className="col-sm-12 modaltext"> Time</label><br />
+                                    <DateTimePicker
+                                        id="time"
+                                        name="time"
+                                        value={this.state.time}
+                                        onChange={time => this.setState({ time })}
+                                    />
+                                    {/* <Calendar/> */}
+
+                                </FormGroup>
                                 <Button name="submit" type="submit" value="submit" outline color="primary" style={{ backgroundColor: "#182d54", color: "whitesmoke" }}> Submit </Button>&emsp;
                                 <Button outline color="primary" style={{ backgroundColor: "#182d54", color: "whitesmoke" }} onClick={this.handleReset} > &nbsp;Reset &nbsp;</Button>
+
                             </Form>
                         </ModalBody>
                     </Modal>
+
                 </div>
+
+
+
 
             </div>
 
