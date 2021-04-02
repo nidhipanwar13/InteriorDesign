@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Card, CardBody, CardTitle, CardImg, CardHeader } from 'reactstrap';
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
-
+import Image from 'react-bootstrap/Image'
 
 
 class Workplace extends Component {
@@ -13,11 +13,11 @@ class Workplace extends Component {
       <div className="Container-fluid">
 
         <div>
-          <img
-            style={{ height: "700px" }}
+        <Image
             className="d-block w-100"
-            src="./Images/components_images/workspace/Background_workspace.jpg"
-            alt="bedroomimage" />
+            src="./Images/components_images/workspace/cover.jpg"
+            alt="livingimage" />
+         
         </div>
         {/* <div class="bg-image"
           style={{
@@ -78,7 +78,7 @@ class Workplace extends Component {
           <div className="container">
             <div className="row">
               <div className="col-sm col-md-4">
-                <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images//components_images/workspace/informal (1).jpg" />
+                <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images//components_images/workspace/informal (1).jpg" />
               </div>
               <Fade top>
                 <div className="col-sm col-md-4"><br />
@@ -87,7 +87,7 @@ class Workplace extends Component {
                 </div>
               </Fade>
               <div className="col-sm col-md-4">
-                <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images//components_images/workspace/informal (2).jpg" />
+                <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images//components_images/workspace/informal (2).jpg" />
               </div>
             </div>
             <div className="row">
@@ -97,7 +97,7 @@ class Workplace extends Component {
                 </div>
               </Fade>
               <div className="col-sm col-md-4">
-                <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images//components_images/workspace/informal (3).jpg" />
+                <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images//components_images/workspace/informal (3).jpg" />
               </div>
               <Fade top>
                 <div className="col-sm col-md-4"><br /><br />

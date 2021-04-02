@@ -285,11 +285,11 @@ class HomeCardimages extends Component {
                                 <CardGroup>
                                     <Flippy flipOnHover={true}>
                                         <FrontSide>
-                                            <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/ceiling_light(1).jpg" />
+                                            <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/ceiling_light(1).jpg" />
 
                                         </FrontSide>
                                         <BackSide>
-                                            <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/ceiling_light(2).jpg" />
+                                            <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/ceiling_light(2).jpg" />
                                         </BackSide>
                                     </Flippy>
                                 </CardGroup>
@@ -299,10 +299,10 @@ class HomeCardimages extends Component {
                             <div className="col-sm col-md-4">
                                 <Flippy flipOnHover={true}>
                                     <FrontSide>
-                                        <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/lamps(1).jpg" />
+                                        <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/lamps(1).jpg" />
                                     </FrontSide>
                                     <BackSide>
-                                        <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/lamps(2).jpg" />
+                                        <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/lamps(2).jpg" />
                                     </BackSide>
                                 </Flippy>
                             </div>
@@ -312,10 +312,10 @@ class HomeCardimages extends Component {
                             <div className="col-sm col-md-4">
                                 <Flippy flipOnHover={true}>
                                     <FrontSide >
-                                        <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/light_bulb(1).jpg" />
+                                        <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/light_bulb(1).jpg" />
                                     </FrontSide>
                                     <BackSide >
-                                        <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/light_bulb(2).jpg" />
+                                        <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/light_bulb(2).jpg" />
                                     </BackSide>
                                 </Flippy>
                             </div>
@@ -324,10 +324,10 @@ class HomeCardimages extends Component {
                             <div className="col-sm col-md-4 offset-md-4">
                                 <Flippy flipOnHover={true}>
                                     <FrontSide>
-                                        <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/chandelier(1).jpg" />
+                                        <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/chandelier(1).jpg" />
                                     </FrontSide>
                                     <BackSide>
-                                        <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/chandelier(2).jpg" />
+                                        <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/chandelier(2).jpg" />
                                     </BackSide>
                                 </Flippy>
                             </div>
