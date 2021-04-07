@@ -62,7 +62,7 @@ class HomeCardimages extends Component {
                                 <Flippy flipOnHover={true}>
                                     <FrontSide>
                                         <Card className="fontstyle" >
-                                            <Card.Img variant="top" height="400px" src="Images/Card_bedroom(1).jpg" />
+                                            <Card.Img variant="top" height="400px" src="Images/components_images/home/Card_bedroom(1).jpg" />
                                             <Card.Body className="cardtext">
                                                 <Card.Title >Bedroom Space</Card.Title>
                                                 <Card.Text>
@@ -73,7 +73,7 @@ class HomeCardimages extends Component {
                                     </FrontSide>
                                     <BackSide>
                                         <Card className="fontstyle" >
-                                            <Card.Img variant="top" height="400px" src="Images/Card_bedroom(2).jpg" />
+                                            <Card.Img variant="top" height="400px" src="Images/components_images/home/Card_bedroom(2).jpg" />
                                             <Card.Body className="cardtext">
                                                 <Card.Title >Bedroom Space</Card.Title>
                                                 <Card.Text>
@@ -88,7 +88,7 @@ class HomeCardimages extends Component {
                                 <Flippy flipOnHover={true}>
                                     <FrontSide>
                                         <Card className="fontstyle" >
-                                            <Card.Img variant="top" height="400px" src="Images/Card_workspace(1).jpg" />
+                                            <Card.Img variant="top" height="400px" src="Images/components_images/home/Card_workspace(1).jpg" />
                                             <Card.Body className="cardtext" >
                                                 <Card.Title>Workspace Area</Card.Title>
                                                 <Card.Text>
@@ -99,7 +99,7 @@ class HomeCardimages extends Component {
                                     </FrontSide>
                                     <BackSide>
                                         <Card className="fontstyle ">
-                                            <Card.Img variant="top" height="400px" src="Images/Card_workspace(2).jpg" />
+                                            <Card.Img variant="top" height="400px" src="Images/components_images/home/Card_workspace(2).jpg" />
                                             <Card.Body className="cardtext" >
                                                 <Card.Title>Workspace Area</Card.Title>
                                                 <Card.Text>
@@ -114,7 +114,7 @@ class HomeCardimages extends Component {
                                 <Flippy flipOnHover={true}>
                                     <FrontSide>
                                         <Card className="fontstyle " >
-                                            <Card.Img variant="top" height="400px" src="Images/Card_living(1).jpg" />
+                                            <Card.Img variant="top" height="400px" src="Images/components_images/home/Card_living(1).jpg" />
                                             <Card.Body className="cardtext">
                                                 <Card.Title>Living Room</Card.Title>
                                                 <Card.Text>
@@ -125,7 +125,7 @@ class HomeCardimages extends Component {
                                     </FrontSide>
                                     <BackSide>
                                         <Card className="fontstyle ">
-                                            <Card.Img variant="top" height="400px" src="Images/Card_living(2).jpg" />
+                                            <Card.Img variant="top" height="400px" src="Images/components_images/home/Card_living(2).jpg" />
                                             <Card.Body className="cardtext">
                                                 <Card.Title>Living Room</Card.Title>
                                                 <Card.Text>
@@ -155,7 +155,7 @@ class HomeCardimages extends Component {
                                 <Flippy flipOnHover={true}>
                                     <FrontSide>
                                         <Card className="fontstyle" >
-                                            <Card.Img variant="top" height="400px" src="Images/Card_chair(1).jpg" />
+                                            <Card.Img variant="top" height="400px" src="Images/components_images/home/Card_chair(1).jpg" />
                                             {/* <Card.Body className="cardtext">
                                                 <Card.Title >Comfortable Chair</Card.Title>
                                                 <Card.Text>
@@ -166,7 +166,7 @@ class HomeCardimages extends Component {
                                     </FrontSide>
                                     <BackSide>
                                         <Card className="fontstyle" >
-                                            <Card.Img variant="top" height="400px" src="Images/Card_chair(2).jpg" />
+                                            <Card.Img variant="top" height="400px" src="Images/components_images/home/Card_chair(2).jpg" />
                                             {/* <Card.Body className="cardtext">
                                                 <Card.Title >Comfortable Chair</Card.Title>
                                                 <Card.Text>
@@ -181,7 +181,7 @@ class HomeCardimages extends Component {
                                 <Flippy flipOnHover={true}>
                                     <FrontSide>
                                         <Card className="fontstyle" >
-                                            <Card.Img variant="top" height="400px" src="Images/table(1).jpg" />
+                                            <Card.Img variant="top" height="400px" src="Images/components_images/home/table(1).jpg" />
                                             {/* <Card.Body className="cardtext" >
                                                 <Card.Title>Planning Table</Card.Title>
                                                 <Card.Text>
@@ -192,7 +192,7 @@ class HomeCardimages extends Component {
                                     </FrontSide>
                                     <BackSide>
                                         <Card className="fontstyle" >
-                                            <Card.Img variant="top" height="400px" src="Images/table(2).jpg" />
+                                            <Card.Img variant="top" height="400px" src="Images/components_images/home/table(2).jpg" />
                                             {/* <Card.Body className="cardtext" >
                                                 <Card.Title>Planning Table</Card.Title>
                                                 <Card.Text>
@@ -219,7 +219,7 @@ class HomeCardimages extends Component {
                                 <Flippy flipOnHover={true}>
                                     <FrontSide>
                                         <Card className="fontstyle">
-                                            <Card.Img variant="top" height="400px" src="Images/bed(1).jpg" />
+                                            <Card.Img variant="top" height="400px" src="Images/components_images/home/bed(1).jpg" />
                                             {/* <Card.Body className="cardtext">
                                                 <Card.Title>Sleepy Bed</Card.Title>
                                                 <Card.Text>
@@ -230,7 +230,7 @@ class HomeCardimages extends Component {
                                     </FrontSide>
                                     <BackSide>
                                         <Card className="fontstyle" >
-                                            <Card.Img variant="top" height="400px" src="Images/bed(2).jpg" />
+                                            <Card.Img variant="top" height="400px" src="Images/components_images/home/bed(2).jpg" />
                                             {/* <Card.Body className="cardtext">
                                                 <Card.Title>Sleepy Bed</Card.Title>
                                                 <Card.Text>
@@ -245,7 +245,7 @@ class HomeCardimages extends Component {
                                 <Flippy flipOnHover={true}>
                                     <FrontSide>
                                         <Card className="fontstyle" >
-                                            <Card.Img variant="top" height="400px" src="Images/sofa(1).jpg" />
+                                            <Card.Img variant="top" height="400px" src="Images/components_images/home/sofa(1).jpg" />
                                             {/* <Card.Body className="cardtext">
                                                 <Card.Title>Rocking Sofa</Card.Title>
                                                 <Card.Text>
@@ -256,7 +256,7 @@ class HomeCardimages extends Component {
                                     </FrontSide>
                                     <BackSide>
                                         <Card className="fontstyle">
-                                            <Card.Img variant="top" height="400px" src="Images/sofa(2).jpg" />
+                                            <Card.Img variant="top" height="400px" src="Images/components_images/home/sofa(2).jpg" />
                                             {/* <Card.Body className="cardtext">
                                                 <Card.Title>Rocking Sofa</Card.Title>
                                                 <Card.Text>
@@ -285,11 +285,11 @@ class HomeCardimages extends Component {
                                 <CardGroup>
                                     <Flippy flipOnHover={true}>
                                         <FrontSide>
-                                            <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/ceiling_light(1).jpg" />
+                                            <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/components_images/home/ceiling_light(1).jpg" />
 
                                         </FrontSide>
                                         <BackSide>
-                                            <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/ceiling_light(2).jpg" />
+                                            <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/components_images/home/ceiling_light(2).jpg" />
                                         </BackSide>
                                     </Flippy>
                                 </CardGroup>
@@ -299,10 +299,10 @@ class HomeCardimages extends Component {
                             <div className="col-sm col-md-4">
                                 <Flippy flipOnHover={true}>
                                     <FrontSide>
-                                        <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/lamps(1).jpg" />
+                                        <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/components_images/home/lamps(1).jpg" />
                                     </FrontSide>
                                     <BackSide>
-                                        <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/lamps(2).jpg" />
+                                        <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/components_images/home/lamps(2).jpg" />
                                     </BackSide>
                                 </Flippy>
                             </div>
@@ -312,10 +312,10 @@ class HomeCardimages extends Component {
                             <div className="col-sm col-md-4">
                                 <Flippy flipOnHover={true}>
                                     <FrontSide >
-                                        <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/light_bulb(1).jpg" />
+                                        <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/components_images/home/light_bulb(1).jpg" />
                                     </FrontSide>
                                     <BackSide >
-                                        <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/light_bulb(2).jpg" />
+                                        <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/components_images/home/light_bulb(2).jpg" />
                                     </BackSide>
                                 </Flippy>
                             </div>
@@ -324,10 +324,10 @@ class HomeCardimages extends Component {
                             <div className="col-sm col-md-4 offset-md-4">
                                 <Flippy flipOnHover={true}>
                                     <FrontSide>
-                                        <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/chandelier(1).jpg" />
+                                        <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/components_images/home/chandelier(1).jpg" />
                                     </FrontSide>
                                     <BackSide>
-                                        <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/chandelier(2).jpg" />
+                                        <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/components_images/home/chandelier(2).jpg" />
                                     </BackSide>
                                 </Flippy>
                             </div>
@@ -348,7 +348,7 @@ class HomeCardimages extends Component {
                                 <Flippy flipOnHover={true}>
                                     <FrontSide>
                                         <Card className="fontstyle3"  >
-                                            <Card.Img height="400px" src="Images/frames(1).jpg" />
+                                            <Card.Img height="400px" src="Images/components_images/home/frames(1).jpg" />
                                             <CardImgOverlay><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                                                 <h1 className="fontstyle3">Limit Frames</h1>
                                                 <h3>Pictures better Speak</h3>
@@ -358,7 +358,7 @@ class HomeCardimages extends Component {
                                     </FrontSide>
                                     <BackSide>
                                         <Card className="fontstyle">
-                                            <Card.Img height="400px" src="Images/frames(2).jpg" />
+                                            <Card.Img height="400px" src="Images/components_images/home/frames(2).jpg" />
                                             <CardImgOverlay><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                                                 <h1 className="fontstyle3">Limit Frames</h1>
                                                 <h3> Pictures better Speak </h3>
@@ -369,7 +369,7 @@ class HomeCardimages extends Component {
                                 <Flippy flipOnHover={true}>
                                     <FrontSide>
                                         <Card className="fontstyle" >
-                                            <Card.Img height="400px" src="Images/flowers(1).jpg" />
+                                            <Card.Img height="400px" src="Images/components_images/home/flowers(1).jpg" />
                                             <CardImgOverlay><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                                                 <h1 className="fontstyle3">Flowers</h1>
                                                 <h3>  Fragrance of Interior</h3>
@@ -378,7 +378,7 @@ class HomeCardimages extends Component {
                                     </FrontSide>
                                     <BackSide>
                                         <Card className="fontstyle" >
-                                            <Card.Img height="400px" src="Images/flowers(2).jpg" />
+                                            <Card.Img height="400px" src="Images/components_images/home/flowers(2).jpg" />
                                             <CardImgOverlay><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                                                 <h1 className="fontstyle3">Flowers</h1>
                                                 <h3>Fragrance of Interior </h3>
@@ -397,7 +397,7 @@ class HomeCardimages extends Component {
                                 <Flippy flipOnHover={true}>
                                     <FrontSide >
                                         <Card className="fontstyle" >
-                                            <Card.Img height="400px" src="Images/wall_hanging(2).jpg" />
+                                            <Card.Img height="400px" src="Images/components_images/home/wall_hanging(2).jpg" />
                                             <CardImgOverlay><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                                                 <h1 className="fontstyle3">Wall Hanging</h1>
                                                 <h3> Hang your Ideas</h3>
@@ -406,7 +406,7 @@ class HomeCardimages extends Component {
                                     </FrontSide>
                                     <BackSide >
                                         <Card className="fontstyle">
-                                            <Card.Img height="400px" src="Images/wall_hanging(1).jpg" />
+                                            <Card.Img height="400px" src="Images/components_images/home/wall_hanging(1).jpg" />
                                             <CardImgOverlay><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                                                 <h1 className="fontstyle3">Wall Hanging</h1>
                                                 <h3> Hang your Ideas</h3>
@@ -417,7 +417,7 @@ class HomeCardimages extends Component {
                                 <Flippy flipOnHover={true}>
                                     <FrontSide >
                                         <Card className="fontstyle" >
-                                            <Card.Img height="400px" src="Images/plant_pots(2).jpg" />
+                                            <Card.Img height="400px" src="Images/components_images/home/plant_pots(2).jpg" />
                                             <CardImgOverlay><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                                                 <h1 className="fontstyle3">Plants Pot</h1>
                                                 <h3>deep into Nature</h3>
@@ -426,7 +426,7 @@ class HomeCardimages extends Component {
                                     </FrontSide>
                                     <BackSide>
                                         <Card className="fontstyle" >
-                                            <Card.Img height="400px" src="Images/plant_pots(1).jpg" />
+                                            <Card.Img height="400px" src="Images/components_images/home/plant_pots(1).jpg" />
                                             <CardImgOverlay><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                                                 <h1 className="fontstyle3">Plants Pot</h1>
                                                 <h3>deep into Nature</h3>

@@ -3,7 +3,7 @@ import { Card, CardBody, CardTitle, CardImg, CardText, CardDeck, CardGroup, Card
 import { Button, Row, Col } from 'reactstrap';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
-
+import Image from 'react-bootstrap/Image'
 
 
 class Bedroom extends Component {
@@ -13,10 +13,9 @@ class Bedroom extends Component {
     return (
       <div className="Container-fluid">
         <div>
-          <img
-            style={{ height: "700px" }}
+          <Image
             className="d-block w-100"
-            src="./Images/components_images/bedroom/cover (2).jpg"
+            src="./Images/components_images/bedroom/cover.jpg"
             alt="bedroomimage" />
         </div>
 
@@ -56,7 +55,7 @@ class Bedroom extends Component {
           <div className="container">
             <div className="row">
               <div className="col-sm col-md-4">
-                <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/components_images/bedroom/cottage (1).jpg" />
+                <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/components_images/bedroom/cottage (1).jpg" />
               </div>
               <Fade top>
                 <div className="col-sm col-md-4"><br />
@@ -65,7 +64,7 @@ class Bedroom extends Component {
                 </div>
               </Fade>
               <div className="col-sm col-md-4">
-                <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/components_images/bedroom/cottage (2).jpg" />
+                <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/components_images/bedroom/cottage (2).jpg" />
               </div>
             </div>
             <div className="row">
@@ -75,7 +74,7 @@ class Bedroom extends Component {
                 </div>
               </Fade>
               <div className="col-sm col-md-4">
-                <img style={{ borderRadius: 175 }} height="350px" width="350px" src="Images/components_images/bedroom/cottage (3).jpg" />
+                <img style={{ borderRadius: 175 }} height="300px" width="300px" src="Images/components_images/bedroom/cottage (3).jpg" />
               </div>
               <Fade top>
                 <div className="col-sm col-md-4"><br /><br />

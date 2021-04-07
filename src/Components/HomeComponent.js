@@ -5,6 +5,8 @@ import { ButtonToggle } from 'reactstrap';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Input, Label, Form, FormGroup } from 'reactstrap';
 import { firebase, dataref, BookingConsultationRef } from "../Config/firebase";
 import DateTimePicker from 'react-datetime-picker';
+import Image from 'react-bootstrap/Image'
+
 
 
 class Home extends Component {
@@ -36,6 +38,8 @@ class Home extends Component {
             isModalOpen: !this.state.isModalOpen
         });
     }
+
+   
 
     handleInputChange(event) {
         const target = event.target;
@@ -142,46 +146,45 @@ class Home extends Component {
             <div className="Container-fluid">
 
                 <Carousel>
-                    <Carousel.Item interval={5000} style={{ 'height': "700px" }} >
-                        <img style={{ 'height': "700px" }}
+                    <Carousel.Item interval={5000} style={{ maxheight: 1000 }} >
+                    <Image 
                             className="d-block w-100"
-                            src={'./Images/bedroom.jpg'} />
+                            src={'./Images/components_images/home/caro_bedroom.jpg'} /> 
                         <Carousel.Caption>
                             <h3>Bedroom </h3>
-                            <ButtonToggle onClick={this.toggleModal} color="danger" size="lg">Book a design Consultation</ButtonToggle>{' '}
+                            <ButtonToggle onClick={this.toggleModal} color="danger" size="sm">Book a design Consultation</ButtonToggle>{' '}
                         </Carousel.Caption>
                     </Carousel.Item  >
-                    <Carousel.Item style={{ 'height': "700px" }} >
-                        <img style={{ 'height': "700px" }}
+                    <Carousel.Item style={{ maxheight: 1000 }} >
+                    <Image 
                             className="d-block w-100"
-                            src={'./Images/Living.jpg'} />
+                            src={'./Images/components_images/home/caro_living.jpg'} /> 
                         <Carousel.Caption>
                             <h3>Living room </h3>
-                            <ButtonToggle onClick={this.toggleModal} color="danger" size="lg">Book a design Consultation</ButtonToggle>{' '}
+                            <ButtonToggle onClick={this.toggleModal} color="danger" size="sm">Book a design Consultation</ButtonToggle>{' '}
                         </Carousel.Caption>
                     </Carousel.Item  >
-                    <Carousel.Item style={{ 'height': "700px" }} >
-                        <img style={{ 'height': "700px" }}
+                    <Carousel.Item style={{ maxheight: 1000 }} >
+                    <Image 
                             className="d-block w-100"
-                            src={'./Images/Dining.jpg'} />
+                            src={'./Images/components_images/home/caro_dining.jpg'} /> 
                         <Carousel.Caption>
                             <h3>Dining room </h3>
-                            <ButtonToggle onClick={this.toggleModal} color="danger" size="lg">Book a design Consultation</ButtonToggle>{' '}
+                            <ButtonToggle onClick={this.toggleModal} color="danger" size="sm">Book a design Consultation</ButtonToggle>{' '}
                         </Carousel.Caption>
                     </Carousel.Item  >
-                    <Carousel.Item style={{ 'height': "700px" }} >
-                        <img style={{ 'height': "700px" }}
+                    <Carousel.Item style={{ maxheight: 1000 }} >
+                         <Image 
                             className="d-block w-100"
-                            src={'./Images/Workspace.jpg'} />
+                            src={'./Images/components_images/home/caro_workspace.jpg'} /> 
+                           
                         <Carousel.Caption>
                             <h3>Workspace </h3>
-                            <ButtonToggle onClick={this.toggleModal} color="danger" size="lg" >Book a design Consultation</ButtonToggle>{' '}
+                            <ButtonToggle onClick={this.toggleModal} color="danger" size="sm" >Book a design Consultation</ButtonToggle>{' '}
                         </Carousel.Caption>
                     </Carousel.Item  >
                 </Carousel>
-
                 <HomeCardimages />
-
                 <div>
                     <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                         <ModalHeader className="fontstyle2" toggle={this.toggleModal}>Provide your valid information</ModalHeader>
@@ -247,6 +250,7 @@ class Home extends Component {
                             </Form>
                         </ModalBody>
                     </Modal>
+
 
                 </div>
 

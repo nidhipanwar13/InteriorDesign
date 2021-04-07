@@ -93,10 +93,20 @@ font-weight: bold;
 
 }
 
-.footerpadding {
- padding-left: 100px;
+.loginmodal{
   color: whitesmoke;
-  width:50%
+  background-color: #05A9A8;
+  font-weight: bolder;
+}
+
+.loginmodal1{
+  color: black;
+}
+
+.footerpadding {
+ padding-left: 50px;
+  color: whitesmoke;
+  
   
 }
 /* .social-icons{
