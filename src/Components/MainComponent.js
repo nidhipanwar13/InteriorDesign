@@ -6,7 +6,6 @@ import Header from "./HeaderComponent";
 import Dining from './DiningComponent';
 import Living from './LivingComponent';
 import Workplace from './WorkplaceComponent';
-// import Accessories from './AccessoriesComponent';
 import Contact from './ContactComponent';
 import Footer from './FooterComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -60,6 +59,7 @@ class Main extends Component {
                                 <Route exact path="/Living" component={Living} />
                                 <Route exact path="/Workplace" component={Workplace} />
                                 <Route exact path="/Contact" component={Contact} />
+
                                 <Redirect to="/Home" />
                             </Switch>
                         </CSSTransition>

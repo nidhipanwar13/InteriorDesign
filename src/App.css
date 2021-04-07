@@ -93,6 +93,16 @@ font-weight: bold;
 
 }
 
+.loginmodal{
+  color: whitesmoke;
+  background-color: #05A9A8;
+  font-weight: bolder;
+}
+
+.loginmodal1{
+  color: black;
+}
+
 .footerpadding {
  padding-left: 50px;
   color: whitesmoke;

@@ -39,6 +39,8 @@ class Home extends Component {
         });
     }
 
+   
+
     handleInputChange(event) {
         const target = event.target;
         const value = target.value;
@@ -248,6 +250,7 @@ class Home extends Component {
                             </Form>
                         </ModalBody>
                     </Modal>
+
 
                 </div>
 
